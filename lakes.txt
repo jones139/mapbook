@@ -1,0 +1,26 @@
+# An example mapbook config for part of Vancouver, BC
+
+# Bottom left corner. Approximately 49.2026N 123.1396W
+-364502.492324125 7273595
+starty 7273595
+startx -364502
+
+# Approximately width*cos(49) real meters
+width 7621
+overwidth 176
+
+#Number of rows (x dir)
+rows 2
+
+#Number of columns (y dir)
+columns 4
+
+
+# about 6.5x8.0
+# 1/2 legal, minus a border of 13pt on the top and 16pt on the sides
+
+pagewidth 472
+pageheight 586
+
+mapfile /home/graham/OSM/code/mapnik_osm/osm.xml
+outputfile lakes.pdf

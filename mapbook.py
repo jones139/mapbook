@@ -127,7 +127,9 @@ if __name__ == "__main__":
 			
 				
 	# Start rendering pages
-	print 'Rendering a total of {} pages'.format(opts.rows*opts.columns)
+	print opts
+	print 'Rendering a total of %d pages ' % (opts.rows * opts.columns)
+	#print 'Rendering a total of {} pages'.format(opts.rows*opts.columns)
 	
 	book = cairo.PDFSurface(opts.outputfile,opts.pagewidth,opts.pageheight)
 
@@ -141,7 +143,8 @@ if __name__ == "__main__":
 
 	for page in pages:
 	
-		print 'Rendering map {} on page {}'.format(page.mapnumber, pagecount)
+		print 'Rendering map %d on page %d' % (page.mapnumber, pagecount)
+		#print 'Rendering map {} on page {}'.format(page.mapnumber, pagecount)
 		
 		#pages[0].bounds[0] - overwidth - 0.5 * (mwidth-width)
 		# = . . .                             *(opts.pagewidth/mapwidth-1)*width
